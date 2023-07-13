@@ -13,14 +13,13 @@ export default function Loading() {
   };
 
   return (
-    <>
+    <div className="flex flex-col gap-4 items-center justify-center w-full h-full">
       <Lottie
+        style={{ maxHeight: "50vh", maxWidth: "50vh", marginBottom: "2rem" }}
         options={defaultOptions}
-        height={400}
-        width={400}
         isClickToPauseDisabled
       />
-      <h1>Loading...</h1>
-    </>
+      <h1 className="antialiased w-full text-center">Loading...</h1>
+    </div>
   );
 }

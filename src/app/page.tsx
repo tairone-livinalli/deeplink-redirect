@@ -24,7 +24,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
+    <main className="flex min-h-screen w-screen flex-col items-center justify-center">
       {isLoading ? <Loading /> : <Error />}
     </main>
   );
